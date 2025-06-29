@@ -1,0 +1,140 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("img/orang095.jpg");
+    background-color: rgba(255, 179, 66, 0.65);
+    background-blend-mode: multiply;
+}
+
+header {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #434346;
+}
+
+header p:first-of-type {
+    font-size: 2em;
+    color: black;
+}
+
+header p:nth-of-type(2) {
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+
+header p:last-of-type {
+    color: #7f8c8d;
+    max-width: 600px;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 500;
+}
+
+article {
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+.italics {
+    font-weight: 400;
+    font-style: oblique;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+        gap: 6px;
+        margin-top: 0;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        letter-spacing: 1px;
+    }
+
+    header p:first-of-type {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
